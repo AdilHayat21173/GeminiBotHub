@@ -29,7 +29,7 @@ The system uses **Google Gemini AI** for generating responses and is deployed vi
 
 
 ## Streamlit App
-You can view and interact with the Streamlit app for token classification [here]().
+You can view and interact with the Streamlit app for token classification [here](https://geminibotapp-3zuxeq8w3f6fappkqdqpfrm.streamlit.app/).
 ## Examples
 Here are some examples of outputs from the model:
 
