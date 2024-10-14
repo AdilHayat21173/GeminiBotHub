@@ -9,3 +9,4 @@ faiss-cpu
 langchain_google_genai
 langchain-groq
 youtube_transcript_api
+langchain_community
