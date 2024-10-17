@@ -62,15 +62,22 @@ This document outlines various AI-powered applications designed for specific tas
 
 ---
 
-## 6. Streamlit SQL Query Retrieval App
-**Overview**: This project is a **Streamlit Application** designed to allow users to convert English questions into SQL queries and retrieve corresponding data from an SQLite database. By leveraging the **Google Gemini AI** for intelligent query generation, this application provides users with an intuitive interface to interact with database records seamlessly.
+## SQL Data Retriever & Inserter with Google Gemini Integration
 
-**Key Features**:
-- Convert natural language questions into SQL queries
-- Retrieve data from an SQLite database
-- Intuitive interface for user interaction
+## Overview
 
-**Deployment Link**: [SQL Query Retrieval App on Hugging Face Spaces](https://huggingface.co/spaces/AdilHayat173/sql_chat)
+This project is a **Streamlit Application** that allows users to create tables, insert records, and retrieve data using SQL queries. The app also leverages **Google Gemini (Generative AI)** to automatically convert natural language questions into SQL queries for tasks like retrieving data from a "BOOK" table in an SQLite database.
+
+## Features
+
+- **Create Tables**: Users can create new tables by specifying the table name and column details.
+- **Insert Records**: After creating a table, users can input and insert data into the table.
+- **Natural Language Processing**: Users can ask questions in plain English, and the app converts these to SQL queries using Google Gemini.
+- **Query Data**: Automatically generated SQL queries retrieve data from the SQLite database.
+- **View Results**: The app displays the generated SQL queries and their results for user review.
+- **User-Friendly Interface**: The application provides a clean, simple layout, making it easy for users to interact with the databas
+- 
+**Deployment Link**: [SQL Query Retrieval App on Hugging Face Spaces]()
 
 ---
 
