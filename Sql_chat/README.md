@@ -1,21 +1,23 @@
-# Streamlit SQL Query Retrieval App
+# SQL Data Retriever & Inserter with Google Gemini Integration
 
 ## Overview
 
-This project is a **Streamlit Application** designed to allow users to convert English questions into SQL queries and retrieve corresponding data from an SQLite database. By leveraging the **Google Gemini AI** for intelligent query generation, this application provides users with an intuitive interface to interact with database records seamlessly.
+This project is a **Streamlit Application** that allows users to create tables, insert records, and retrieve data using SQL queries. The app also leverages **Google Gemini (Generative AI)** to automatically convert natural language questions into SQL queries for tasks like retrieving data from a "BOOK" table in an SQLite database.
 
 ## Features
 
-- **Natural Language Processing**: Users can input questions in English, and the app converts these to SQL queries.
-- **Data Retrieval**: Retrieves and displays data from the `STUDENT` table in the SQLite database.
-- **Real-time Interaction**: Users receive immediate feedback and results based on their queries.
-- **User-Friendly Interface**: The app is easy to navigate, with a clean and simple layout.
+- **Create Tables**: Users can create new tables by specifying the table name and column details.
+- **Insert Records**: After creating a table, users can input and insert data into the table.
+- **Natural Language Processing**: Users can ask questions in plain English, and the app converts these to SQL queries using Google Gemini.
+- **Query Data**: Automatically generated SQL queries retrieve data from the SQLite database.
+- **View Results**: The app displays the generated SQL queries and their results for user review.
+- **User-Friendly Interface**: The application provides a clean, simple layout, making it easy for users to interact with the database.
 
 ## Technologies Used
 
 - **Streamlit**: For building the interactive web interface.
 - **Google Gemini AI**: For generating SQL queries from user input.
-- **SQLite**: For managing and retrieving student records.
+- **SQLite**: For managing and retrieving records.
 - **dotenv**: For securely managing environment variables, including API keys.
 
 ## Usage
@@ -44,31 +46,31 @@ You can view and interact with the Streamlit app  [here](<your_streamlit_app_lin
 
 ## Examples
 **OUTPUT**:
-![image](https://github.com/user-attachments/assets/237070db-c475-4b08-ab4e-626de9347c87)
-![image](https://github.com/user-attachments/assets/4f4ae1af-85c7-4408-9d52-ac11c5dbcc2b)
-![image](https://github.com/user-attachments/assets/5e57ee82-bbee-4f28-a47c-af535ed26f1e)
+![image](https://github.com/user-attachments/assets/82275e07-dc0d-4eb5-8105-add85ad06449)
+![image](https://github.com/user-attachments/assets/7e7bbaad-3b9b-4b0f-aa26-818e941a626b)
+![image](https://github.com/user-attachments/assets/01b6bf47-fac2-476a-a6e2-c8bec3b0cbf4)
+![image](https://github.com/user-attachments/assets/8f1e07e4-7cfa-4246-9c1c-24e3aabdf23d)
+
 
 
 
 ## Detailed Workflow
 
 ### 1. Environment Variable Setup
-   - The application begins by loading environment variables using `dotenv`, which includes configuring the Google API key needed for accessing the Gemini AI.
+The application starts by loading environment variables using `dotenv`, which includes configuring the Google API key for accessing the Gemini AI.
 
 ### 2. Initialize the Google Gemini Model
-   - The app initializes the Google Gemini AI model using `genai.GenerativeModel('gemini-pro')`.
-   - This step sets up a chat session to manage ongoing conversation history.
+The app initializes the Google Gemini AI model using `genai.GenerativeModel('gemini-pro')`. This setup allows the app to convert user input (in natural language) into SQL queries.
 
 ### 3. User Input Handling
-   - The app creates an input field where users can type their questions.
-   - Upon clicking the **"Ask the question"** button, the application processes the input and interacts with the AI model to generate a SQL query.
+The app provides input fields for creating tables, inserting records, and asking questions. For questions in natural language, upon clicking the **"Ask the question"** button, the input is processed and sent to the Google Gemini AI model to generate a SQL query.
 
 ### 4. Response Generation
-   - The function `get_gemini_response(question, prompt)` sends the user’s question to the Gemini model and retrieves the SQL command.
-   - The SQL command is then executed against the SQLite database to retrieve the relevant data.
+The function `get_gemini_response(question, prompt)` sends the user’s question to the Gemini model and retrieves the generated SQL query. The SQL query is then executed against the SQLite database to retrieve the relevant data.
 
-### 5. Display Query Results
-   - The app displays the retrieved data from the database, allowing users to see the results of their queries.
+### 5. Display Results
+The app displays the generated SQL queries and the results retrieved from the database, allowing users to see the query process and data output.
+
 
 ## Acknowledgements
 
