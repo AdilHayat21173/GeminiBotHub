@@ -42,7 +42,7 @@ This project is a **Streamlit Application** that allows users to create tables, 
     - The app displays the results based on the generated SQL query, allowing you to see the retrieved records.
 ## Streamlit App
 
-You can view and interact with the Streamlit app  [here](<your_streamlit_app_link>).
+You can view and interact with the Streamlit app  [here](<https://geminibotapp-jxrqfmusjhkfhlctdlcehq.streamlit.app/>).
 
 ## Examples
 **OUTPUT**:
