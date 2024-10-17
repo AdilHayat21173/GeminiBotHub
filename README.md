@@ -77,7 +77,7 @@ This project is a **Streamlit Application** that allows users to create tables, 
 - **View Results**: The app displays the generated SQL queries and their results for user review.
 - **User-Friendly Interface**: The application provides a clean, simple layout, making it easy for users to interact with the databas
 - 
-**Deployment Link**: [SQL Query Retrieval App on Hugging Face Spaces]()
+**Deployment Link**: [SQL Query Retrieval App on Hugging Face Spaces](https://geminibotapp-jxrqfmusjhkfhlctdlcehq.streamlit.app/)
 
 ---
 
